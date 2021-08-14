@@ -1,4 +1,4 @@
-module LG_2_1_tb;
+module LG_2_tb;
 
 	// Inputs
 	reg A;
