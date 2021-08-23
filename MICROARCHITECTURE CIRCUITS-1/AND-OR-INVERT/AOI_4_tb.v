@@ -52,6 +52,5 @@ module AOI_4_tb;
 		H = 0;
 		I = 1;
   
-    endmodule
-
-	end
+    	end
+endmodule
