@@ -1,4 +1,4 @@
-module hadd(input LT , input BI , input RBI , input D , input C , input B , input A , output a, output b , output c , output d , output e , output f , output g , output RBO);
+module BCDTOSEVEN_1(input LT , input BI , input RBI , input D , input C , input B , input A , output a, output b , output c , output d , output e , output f , output g , output RBO);
 assign RBO = ~BI ? 1'b0 : RBO_r;
 reg RBO_r;
 wire [6:0] bcd_w = ~BI ? 7'b1111111 : bcd_r;
