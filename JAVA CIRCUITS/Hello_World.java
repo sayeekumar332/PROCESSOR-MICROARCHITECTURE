@@ -1,7 +1,7 @@
 // In this Java Program , the string Hello World is given as command line argument in command prompt
 class Hello_World
 {
-  public static void main(String args[])String args[] is a array of the data-type String.
+  public static void main(String args[]) //String args[] is a array of the data-type String.
   {
     System.out.print(args[0] + " " + args[1]);// + serves as String concatenation operator ; The empty double quotes serves as "space" between the two command line arguments
   }
