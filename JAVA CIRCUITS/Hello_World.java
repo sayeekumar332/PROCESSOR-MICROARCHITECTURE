@@ -35,3 +35,15 @@ java class_name args[0] args[1]........... and so on
 // The set of codings starting from the main method is called "Thread" 
 // The number of strings you give in command prompt , while executing java program , is the length of the argument array. (args[])
 // In Command Prompt , the maximum number of command line arguments that can be given is 8191.
+
+
+// public static void main - All these keywords are for facilitating JVM[Java Virtual Machine] - a Stack based Processor Micro-architecture , with 65,536 Stack Locations
+// public - The main method can be accessed by JVM , which is outside the class implemented here
+// static - The main method can be accessed by JVM before creating an object for the class
+// void - The main method does not return any value.
+
+// JVM[Java Virtual Machine] is present as .dll[Dynamic Link Library] within the JRE folder which is installed along with the JDK
+// jre 1.x.y_zzz ---> bin --> server --> jvm.dll
+x - refers to the version
+y - refers to the subversion of x
+zzz - refers to sub-version of y
