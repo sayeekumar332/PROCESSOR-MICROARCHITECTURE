@@ -31,7 +31,7 @@ java class_name args[0] args[1]........... and so on
 // Class name mismatches with file name is considered a run-time error. Compiler allows file-name and class_name mismatches.
 // Giving the command line arguments during execution of java program is compulsory
 // Using the command line arguments in a java program , but not giving them during execution of java program from command prompt will generate "ArrayIndexOutofBounds" Exception. This
-// exception will be generated when we are trying to print an empty array or when we are trying to print elements of an array beyond its index value.
+// exception will be generated when we are trying to print an empty array or when we are trying to print elements of an array beyond its index value. This is a run-time error.
 // The set of codings starting from the main method is called "Thread" 
 // The number of strings you give in command prompt , while executing java program , is the length of the argument array. (args[])
 // In Command Prompt , the maximum number of command line arguments that can be given is 8191.
@@ -42,8 +42,8 @@ java class_name args[0] args[1]........... and so on
 // static - The main method can be accessed by JVM before creating an object for the class
 // void - The main method does not return any value.
 
-// JVM[Java Virtual Machine] is present as .dll[Dynamic Link Library] within the JRE folder which is installed along with the JDK
-// jre 1.x.y_zzz ---> bin --> server --> jvm.dll
+// JVM[Java Virtual Machine] is present as .dll[Dynamic Link Library] within the JRE folder which is installed along with the JDK in a particular drive
+// jre 1.x.y_zzz ---> bin --> server or client --> jvm.dll
 x - refers to the version
 y - refers to the subversion of x
 zzz - refers to sub-version of y
