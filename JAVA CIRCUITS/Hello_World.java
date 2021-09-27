@@ -29,12 +29,13 @@ java class_name args[0] args[1]........... and so on
 // The command line arguments "args[n]" , where "n" represents an integer , when separated by white spaces will be considered as separate arguments
 // The first command line argument is indexed at 0 , the second at 1 and so on.
 // Class name mismatches with file name is considered a run-time error. Compiler allows file-name and class_name mismatches.
-// Giving the command line arguments during execution of java program is compulsory
+// Giving the command line arguments during execution of java program is compulsory , if they have been used in a program
 // Using the command line arguments in a java program , but not giving them during execution of java program from command prompt will generate "ArrayIndexOutofBounds" Exception. This
 // exception will be generated when we are using the array arguments in a program but not assigning value to it or when we are trying to print elements of an array beyond its index value. This is a run-time error.
 // The set of codings starting from the main method is called "Thread" 
 // The number of strings you give in command prompt , while executing java program , is the length of the argument array. (args[])
 // In Command Prompt , the maximum number of command line arguments that can be given is 8191.
+// Two or more strings separated by a _("underscore") will be considered as SINGLE COMMAND LINE ARGUMENT , while giving the execution command of JAVA in command prompt
 
 
 // public static void main - All these keywords are for facilitating JVM[Java Virtual Machine] - a Stack based Processor Micro-architecture , with 65,536 Stack Locations
