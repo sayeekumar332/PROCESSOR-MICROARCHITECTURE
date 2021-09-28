@@ -32,8 +32,8 @@ m1.start(); // Now the object m1 acts as a thread. Since "start()" method is inv
 Code No. 2
 Step 1: Create a subclass of Thread Class
 Step 2 : Create an object for the Thread Class
-Step 3 : Create an object for the Sub Class
-Step 4 : Pass the object of the subclass as the parameter into the Thread()[Constructor of Thread Class]
+Step 3 : Create an object for a Class that implements the Runnable interface
+Step 4 : Pass the object of the class that implements the Runnable interface as the parameter into the Thread()[Constructor of Thread Class]
 Step 5 : Using the object of the Thread class , access the start() of Thread Class
 Step 6 : Since start() method requires a supporting run() , implement the run() method before the main method.
 
@@ -47,7 +47,7 @@ System.out.println("The Thread is Running");
 public static void main(String args[])
 {
 Multi m1 = new Multi();
-Thread r1 = new Thread(m1);
+Thread r1 = new Thread(m1);// Thread(Runnable r) - Thread is the constructor of Thread Class ; Runnable r - r is the object of the class of type Runnable [i.e. the class that is implementing Runnable Interface]
 r1.start()
 }
 }
