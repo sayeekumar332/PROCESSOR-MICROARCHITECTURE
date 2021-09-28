@@ -69,3 +69,19 @@ class Multi implements Runnable
 		r1.start(); // Two times r1 is started. This is an exception or error
 	}
 }  
+Code 4:
+Another form of code-3
+import java.lang.*; //*[asterisk is called WILDCARD] and is used for including all the CLASSES and INTERFACES within java.lang package
+class Multi extends Thread
+{
+public void run() // Over-riding "run()" of Thread Class
+{
+System.out.println("The Thread is Running");
+}
+public static void main(String args[])
+{
+Multi m1 = new Multi();// Now we create an object of the "Multi" class by means of "new" operator and empty constructor "Multi()". 
+m1.start(); // Now the object m1 acts as a thread. Since "start()" method is invoked , the "run()" gets automatically invoked and the code within it will be executed
+m1.start(); // Two times m1 is started . This is an exception or error
+}
+}
