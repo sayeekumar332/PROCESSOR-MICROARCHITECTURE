@@ -12,7 +12,7 @@ class Hello_World
   public static void main(String args[]) //String args[] is a array of the data-type String.
   {
   out.print(args[0] + " " + args[1]);// + serves as String concatenation operator ; The empty double quotes serves as "space" between the two command line arguments. "out" is a static variable of the final class System. Here the class_name has been eliminated. Only the final variable and the corresponding static function println has been included
-	out.print(args.length);
+  out.print(args.length);
   }
 }
 When we include static word for a package , we need not mention the Class_name whenever we are accessing the static members [Data members or variables and Method members or functions] of a class
@@ -24,7 +24,7 @@ class Hello_World
   public static void main(String args[]) //String args[] is a array of the data-type String.
   {
   out.print(args[0] + " " + args[1]);// + serves as String concatenation operator ; The empty double quotes serves as "space" between the two command line arguments. "out" is a static variable of the final class System. Here the class_name has been eliminated. Only the final variable and the corresponding static function println has been included
-	out.print(args.length);
+  out.print(args.length);
   }
 }  
 When static keyword are mentioned for packages , we cannot mention the instance members or methods of the classes belonging to the package , in the "import" statement
