@@ -15,6 +15,8 @@ A package is a folder which contains CLASSES and INTERFACES related to a particu
 
 // Instead of "start()" , if we directly call the run method , a thread will not be created. But it will just run like a normal method. Only a start method can create a thread.
 
+// The run() method of Thread Class or Runnable Interface when used in a class whose object is going to be used as thread, must contain the set of actions to be performed by a thread when started.
+
 // Creating a Thread by creating a subclass of Thread Class
 Step 1: Create a subclass of Thread Class
 Step 2 : Create an object for the Thread Class
