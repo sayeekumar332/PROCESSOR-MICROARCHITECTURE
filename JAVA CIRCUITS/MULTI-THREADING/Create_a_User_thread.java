@@ -13,6 +13,7 @@ A package is a folder which contains CLASSES and INTERFACES related to a particu
 
 // The threads created within the main method of a class or a subclass are called Child Threads. Suppose within a main method , there are 3 child threads. Then the total number of threads present are 4 [One parent thread(i.e. main method) + 3 child threads]
 
+// Instead of "start()" , if we directly call the run method , a thread will not be created. But it will just run like a normal method. Only a start method can create a thread.
 
 // Creating a Thread by creating a subclass of Thread Class
 Step 1: Create a subclass of Thread Class
