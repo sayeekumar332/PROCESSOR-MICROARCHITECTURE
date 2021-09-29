@@ -7,6 +7,13 @@ Thread Class and Runnable Interface are implemented as Thread.java and Runnable.
 Any java package can contain both a CLASS and INTERFACE. 
 A package is a folder which contains CLASSES and INTERFACES related to a particular application
 
+// In Java , there are only two types of threads
+1. User Thread or High Priority Thread or Foreground Thread [Created by extension of Thread Class and implementing its "run() or implementation of "run()" of Runnable Interface]
+2. Daemon Thread or Low Priority Thread or Background Thread 
+
+// The threads created within the main method of a class or a subclass are called Child Threads. Suppose within a main method , there are 3 child threads. Then the total number of threads present are 4 [One parent thread(i.e. main method) + 3 child threads]
+
+
 // Creating a Thread by creating a subclass of Thread Class
 Step 1: Create a subclass of Thread Class
 Step 2 : Create an object for the Thread Class
