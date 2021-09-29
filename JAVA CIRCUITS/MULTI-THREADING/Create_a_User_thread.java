@@ -38,12 +38,11 @@ m1.start(); // Now the object m1 acts as a thread. Since "start()" method is inv
 
 // Creating a Thread by implementing the "run()" method of Runnable Interface
 Code No. 2
-Step 1: Create a subclass of Thread Class
-Step 2 : Create an object for the Thread Class
-Step 3 : Create an object for a Class that implements the Runnable interface
-Step 4 : Pass the object of the class that implements the Runnable interface as the parameter into the Thread()[Constructor of Thread Class]
-Step 5 : Using the object of the Thread class , access the start() of Thread Class
-Step 6 : Since start() method requires a supporting run() , implement the run() method before the main method.
+Step 1 : Create an object for the Thread Class
+Step 2 : Create an object for a Class that implements the Runnable interface
+Step 3 : Pass the object of the class that implements the Runnable interface as the parameter into the Thread()[Constructor of Thread Class]
+Step 4 : Using the object of the Thread class , access the start() of Thread Class
+Step 5 : Since start() method requires a supporting run() , implement the run() method before the main method.
 
 import java.lang.*;
 class Multi implements Runnable
