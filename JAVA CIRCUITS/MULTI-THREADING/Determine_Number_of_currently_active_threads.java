@@ -37,3 +37,23 @@ class Multi extends Thread
 		System.out.println(t.getName()); // Here the name of the main thread is "Admin Thread"
 	}
 }
+
+Code No. 4 : Determining the currently active threads
+import java.lang.*;
+class Multi extends Thread
+{
+	public static void main(String args[])
+	{
+		Thread t = Thread.currentThread();
+		t.setName("Admin Thread");
+		t.setPriority(1);
+		Multi m1 = new Multi();
+		m1.setName("First Child Thread");
+		m1.start();
+		Multi m2 = new Multi();
+                m2.setName("Second Child Thread");
+		m2.start();
+		System.out.println("Thread = " + t.activeCount());// Here we use the object of the main thread to determine the number of currently running threads within it. (i) Main Thread (ii) m1 child Thread (iii) m2 child Thread
+		
+	} // Only the threads that are in started condition , will be taken into consideration by activeCount method.
+}
