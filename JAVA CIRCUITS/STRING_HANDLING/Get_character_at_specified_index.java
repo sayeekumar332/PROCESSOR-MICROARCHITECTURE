@@ -44,3 +44,36 @@ System.out.println(ch_1);// This prints the last character of the string
 }
 }
  
+Code No.5 : Print the characters at the Odd indices of a given string
+public class String_1
+{
+public static void main(String args[])
+{
+String s1 = "Welcome";
+int strlength = s1.length();
+for (int i = 0 ; i <= strlength - 1; i++)// This loop is to traverse the entire indices of a given string
+{
+if((i%2)!=0) // Whenever a index is odd number , print the character at that position
+{
+System.out.println("The character at" +" " + i + "is" + " " + s1.charAt(i));
+}
+}
+}
+}
+
+Code No. 6 : Print the characters at the Even indices of a given string
+public class String_1
+{
+public static void main(String args[])
+{
+String s1 = "Welcome";
+int strlength = s1.length();
+for (int i = 0 ; i <= strlength - 1; i++)// This loop is to traverse the entire indices of a given string
+{
+if((i%2)==0)// Whenever a index is even number , print the character at that position
+{
+System.out.println("The character at" + " " + i + " " + "is" + " " + s1.charAt(i));
+}
+}
+}
+}
