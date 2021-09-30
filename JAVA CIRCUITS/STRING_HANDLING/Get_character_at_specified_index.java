@@ -18,3 +18,14 @@ char ch = s1.charAt(4);
 System.out.println(ch);//ch is the character variable , which holds the character at position 4 of the string "Welcome"
 }
 }
+
+Code 3 : If we try to access a location beyond the allotted indices , then we get String Out of Bounds Exception at run-time
+public class String_1
+{
+public static void main(String args[])
+{
+String s1 = "Welcome";
+char ch = s1.charAt(8);
+System.out.println(ch);//This generates String Out of Bounds Exception , because the number of indices in the string "Welcome" ranges from 0 to 7 , since the string "Welcome" is a 7 characters string
+}
+}
