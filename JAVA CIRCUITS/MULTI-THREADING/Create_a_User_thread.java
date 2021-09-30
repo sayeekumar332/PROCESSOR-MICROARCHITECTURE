@@ -94,3 +94,18 @@ m1.start(); // Now the object m1 acts as a thread. Since "start()" method is inv
 m1.start(); // Two times m1 is started . This is an exception or error
 }
 }
+
+Code 5 : Creating an object for the main Thread , set a Name for it , set a priority for it
+import java.lang.*;
+class Multi extends Thread
+{
+	public static void main(String args[])
+	{
+		Thread t = Thread.currentThread(); // t is the object of the main thread
+		t.setName("Admin Thread"); // name of the main thread
+		t.setPriority(1); // priority of the main thread
+		System.out.println("Thread = " + t);
+		int count = Thread.activeCount(); // number of threads currently active.
+		System.out.println(count);
+	}
+}
