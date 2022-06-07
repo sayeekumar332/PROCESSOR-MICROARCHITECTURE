@@ -17,10 +17,9 @@ module MCPU8_1_tb;
 	wire [7:0] B_REG;
 	wire [7:0] ALU_OUT;
 	wire [7:0] OR_out;
-	wire [17:0] CW;
+	wire [16:0] CW;
 	wire EP;
 	wire CP;
-	wire SELECT;
 	wire LM;
 	wire CE;
 	wire LI;
@@ -29,11 +28,11 @@ module MCPU8_1_tb;
 	wire LOAD;
 	wire CLR;
 	wire INC;
-	wire SELECT_ACC;
 	wire LA;
 	wire EA;
 	wire LB;
 	wire SU;
+	wire AD;
 	wire EU;
 	wire LO;
 
@@ -56,7 +55,6 @@ module MCPU8_1_tb;
 		.CW(CW), 
 		.EP(EP), 
 		.CP(CP), 
-		.SELECT(SELECT), 
 		.LM(LM), 
 		.CE(CE), 
 		.LI(LI), 
@@ -65,253 +63,198 @@ module MCPU8_1_tb;
 		.LOAD(LOAD), 
 		.CLR(CLR), 
 		.INC(INC), 
-		.SELECT_ACC(SELECT_ACC), 
 		.LA(LA), 
 		.EA(EA), 
 		.LB(LB), 
 		.SU(SU), 
+		.AD(AD), 
 		.EU(EU), 
 		.LO(LO)
 	);
 
 	initial begin
-		// Initialize Inputs
-		clk = 0;
-		rst = 0;
-
-		// Wait 100 ns for global reset to finish
-		#50;
+      // Start LDA
       clk = 0;
-		rst = 1;
-      #50;
-      clk = 1;
-		rst = 0;
-      
-		#50;
-      clk = 0;
-		rst = 0;
-
-      #50;
-      clk = 1;
-		rst = 0; 
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 1;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
-// END OF LDA 09
-      #50;
-      clk = 0;
-		rst = 0;
-
-      #50;
-      clk = 1;
-		rst = 0;
-		
-		#50;
-      clk = 0;
-		rst = 0;
-
-      #50;
-      clk = 1;
-		rst = 0;
- 
-      #50;
-      clk = 0;
-		rst = 0;
-
-      #50;
-      clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
+// End of LDA
+// Start of ADD
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0; 
-// END OF ADD 0A
-      #50;
-      clk = 0;
-		rst = 0;
-
-      #50;
-      clk = 1;
-		rst = 0;
-		
-		#50;
-      clk = 0;
-		rst = 0;
-
-      #50;
-      clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
+// End of ADD
+// Start of OUT
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
-// END OF ADD 0B
-      #50;
-      clk = 0;
-		rst = 0;
-
-      #50;
-      clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0; 		
 
-      #50;
-      clk = 0;
-		rst = 0;
-
-      #50;
-      clk = 1;
-		rst = 0;		
-		
-        		
-		end
+	end
       
 endmodule
