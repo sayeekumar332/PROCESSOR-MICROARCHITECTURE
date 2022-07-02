@@ -5,18 +5,18 @@ module MCPU8_1_tb;
 	reg rst;
 
 	// Outputs
-	wire [3:0] PC_OUT;
-	wire [3:0] MAR_OUT;
+	wire [4:0] PC_OUT;
+	wire [4:0] MAR_OUT;
 	wire [3:0] IR_OUT1;
-	wire [3:0] IR_OUT2;
-	wire [7:0] DATA_OUT1;
-	wire [3:0] ADDR_OUT1;
-	wire [3:0] COUNT_OUT;
-	wire [7:0] ACCUMULATOR_OUT;
-	wire [7:0] DATA_OUTPUT;
-	wire [7:0] B_REG;
-	wire [7:0] ALU_OUT;
-	wire [7:0] OR_out;
+	wire [4:0] IR_OUT2;
+	wire [8:0] DATA_OUT1;
+	wire [4:0] ADDR_OUT1;
+	wire [4:0] COUNT_OUT;
+	wire [8:0] ACCUMULATOR_OUT;
+	wire [8:0] DATA_OUTPUT;
+	wire [8:0] B_REG;
+	wire [8:0] ALU_OUT;
+	wire [8:0] OR_out;
 	wire [16:0] CW;
 	wire EP;
 	wire CP;
@@ -73,7 +73,8 @@ module MCPU8_1_tb;
 	);
 
 	initial begin
-      // Start LDA
+		
+     // Start LDA Routine
       clk = 0;
       rst = 0;
 
@@ -123,9 +124,9 @@ module MCPU8_1_tb;
 
       #50;
       clk = 1;
-      rst = 0;
-// End of LDA
-// Start of ADD
+      rst = 0; 
+// End of LDA Routine
+// Start ADD Routine
       #50;
       clk = 0;
       rst = 0;
@@ -134,63 +135,6 @@ module MCPU8_1_tb;
       clk = 1;
       rst = 0;
 
-      #50;
-      clk = 0;
-      rst = 0;
-
-      #50;
-      clk = 1;
-      rst = 0;
-
-      #50;
-      clk = 0;
-      rst = 0;
-
-      #50;
-      clk = 1;
-      rst = 0;
-
-      #50;
-      clk = 0;
-      rst = 0;
-
-      #50;
-      clk = 1;
-      rst = 0;
-
-      #50;
-      clk = 0;
-      rst = 0;
-
-      #50;
-      clk = 1;
-      rst = 0;
-
-      #50;
-      clk = 0;
-      rst = 0;
-
-      #50;
-      clk = 1;
-      rst = 0;
-
-      #50;
-      clk = 0;
-      rst = 0;
-
-      #50;
-      clk = 1;
-      rst = 0;
-
-      #50;
-      clk = 0;
-      rst = 0;
-
-      #50;
-      clk = 1;
-      rst = 0;
-// End of ADD
-// Start of OUT
       #50;
       clk = 0;
       rst = 0;
@@ -254,6 +198,136 @@ module MCPU8_1_tb;
       #50;
       clk = 1;
       rst = 0; 		
+// End of ADD Routine
+// Start SUB Routine
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;		
+// End of SUB Routine
+// Start of OUT Routine
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;	
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0; 
 
 	end
       
