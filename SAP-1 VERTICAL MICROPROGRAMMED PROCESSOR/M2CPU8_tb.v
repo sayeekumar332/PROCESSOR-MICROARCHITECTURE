@@ -7,13 +7,13 @@ module M2CPU8_tb;
 	// Outputs
 	wire EP;
 	wire CP;
-	wire [3:0] PC_OUT_o;
-	wire [3:0] SRAM_ADDR_o;
+	wire [4:0] PC_OUT_o;
+	wire [4:0] SRAM_ADDR_o;
 	wire LM;
 	wire CE_o;
 	wire [3:0] IR_1_OUT_o;
-	wire [3:0] IR_2_OUT_o;
-	wire [7:0] SRAM_OUT;
+	wire [4:0] IR_2_OUT_o;
+	wire [8:0] SRAM_OUT;
 	wire LI_o;
 	wire EI_o;
 	wire CS_o;
@@ -27,13 +27,13 @@ module M2CPU8_tb;
 	wire EU_o;
 	wire LB_o;
 	wire LO_o;
-	wire [7:0] OUT_o;
-	wire [3:0] PRE_OUT_o;
-	wire [7:0] ACC_OUT_o;
-	wire [7:0] ACC_OUT_bus_o;
-	wire [7:0] B_o;
-	wire [7:0] ALU_OUT_o;
-	wire [7:0] ALU_OUT_bus;
+	wire [8:0] OUT_o;
+	wire [4:0] PRE_OUT_o;
+	wire [8:0] ACC_OUT_o;
+	wire [8:0] ACC_OUT_bus_o;
+	wire [8:0] B_o;
+	wire [8:0] ALU_OUT_o;
+	wire [8:0] ALU_OUT_bus;
 
 	// Instantiate the Unit Under Test (UUT)
 	M2CPU8 uut (
@@ -71,189 +71,262 @@ module M2CPU8_tb;
 	);
 
 	initial begin
-		// Start LDA
-		clk = 0;
-		rst = 0;
-
-		#50;
-      clk = 0;
-		rst = 1; 
-
-      #50;
-      clk = 1;
-		rst = 0;
+	// Start LDA Routine
+	clk = 0;
+	rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 1;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0; 
 
       #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
-		
-		 #50;
+      rst = 0;	
+
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
-// End of LDA
-// Start of ADD
-       #50;
+      rst = 0;
+
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
-
-       #50;
+      rst = 0;
+// End of LDA Routine
+// Start of ADD Routine
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;  	
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0; 		
 // End of ADD Routine
+// Start of SUB Routine
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;	
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+
+      #50;
+      clk = 0;
+      rst = 0;
+
+      #50;
+      clk = 1;
+      rst = 0;
+// End of SUB Routine
 // Start of OUT Routine
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
-
-       #50;
+      rst = 0;
+   
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;
+      rst = 0;
 
-       #50;
+      #50;
       clk = 0;
-		rst = 0;
+      rst = 0;
 
       #50;
       clk = 1;
-		rst = 0;  		
-// End of OUT Routine		
-
+      rst = 0;   		
+// End of OUT Routine
 	end
       
 endmodule
+
